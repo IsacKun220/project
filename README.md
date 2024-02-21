@@ -1,7 +1,17 @@
-# README
+# Management of 3D Printing data
+### Team 02
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository will follow the ruby style guidelines outlined [here](https://rubystyle.guide/).
+
+### Linting
+Before commiting, make sure to run **rubocop** to check all ruby source files for errors. 
+This will autocorrect all offenses. 
+```bash
+rubocop -a
+```
+
+Prequi
+
 
 Things you may want to cover:
 
