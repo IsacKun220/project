@@ -3,8 +3,10 @@
   %head
     %title 3D Printing Research Lab
     %link{rel: "stylesheet", href: "../packs/styles/stylefooter.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleforms.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styleheader.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styles.css"}
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"}
     %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
     %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous"}
     %link{href: "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap", rel: "stylesheet"}
@@ -15,10 +17,23 @@
           .navigation
             %ul
               %li
-                %a{href: "home.html", class: "active"} Home
+                %a{href: "home.html"} Home
+              %li
+                %a{href: "printers.html"} Printers
+              %li
+                %a{href: "materials.html"} Materials
+              %li
+                %a{href: "searchbuilds.html", class: "active"} Builds
+              %li
+                %a{href: "users.html"} Users
           .auth-buttons
-            %button{onclick: "location.href='signup.html'"} Sign Up
-            %button{onclick: "location.href='login.html'"} Login
+            .dropdown
+              %button.profile-link
+                @Your Name
+                %i.fas.fa-user
+              .dropdown-content
+                %a{href: "myprofile.html"} View Profile
+                %a{href: "home.html"} Logout
         .logo-title-container
           %img{src: "../packs/images/University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
           .title
@@ -27,12 +42,10 @@
       %main
         %section
           %article
-            %h2 WELCOME TO OUR LAB!
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        %section
-          %article
-            %h2 MANDATORY TRAINING
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            %h2 Search builds
+            %p Here our user will be able to select how he wants to filter the builds and pressing on the search button it will redirect him to the
+            %a{href: "builds.html"} builds page
+            matching their filters
       %footer
         .contact-info
           %h2 CONTACT INFORMATION

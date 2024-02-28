@@ -1,0 +1,49 @@
+!!!
+%html{lang: "en-GB"}
+  %head
+    %title 3D Printing Research Lab
+    %link{rel: "stylesheet", href: "../packs/styles/stylefooter.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleforms.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleheader.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styles.css"}
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"}
+    %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
+    %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true}
+    %link{href: "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap", rel: "stylesheet"}
+  %body
+    .wrapper
+      %header
+        %nav
+          .navigation
+            %ul
+              %li= link_to 'Home', 'home.html'
+              %li= link_to 'Printers', 'printers.html'
+              %li= link_to 'Materials', 'materials.html'
+              %li= link_to 'Builds', 'searchbuilds.html', class: 'active'
+              %li= link_to 'Users', 'users.html'
+          .auth-buttons
+            .dropdown
+              %button.profile-link @Your Name 
+                %i.fas.fa-user
+              .dropdown-content
+                = link_to 'View Profile', 'myprofile.html'
+                = link_to 'Logout', 'home.html'
+        .logo-title-container
+          %img{src: "../packs/images/University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
+          .title
+            %h1#h1-1 3D PRINTING
+            %h1#h1-2 RESEARCH LAB
+      %main
+        %section
+          %article
+            %h2 List of builds
+            %p Here the user will see the table with all the builds matching their filters and be able to add/delete and click on the specific
+            = link_to 'build', 'build.html'
+      %footer
+        .contact-info
+          %h2 CONTACT INFORMATION
+          = link_to 'contact@sheffield.ac.uk', 'mailto:contact@sheffield.ac.uk'
+        .legal-links
+          %p © 2024 The University of Sheffield
+          %p= link_to 'Privacy Policy', '#'
+          = link_to 'Terms & Conditions', '#'

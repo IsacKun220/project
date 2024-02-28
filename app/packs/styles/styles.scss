@@ -1,0 +1,50 @@
+$color_1: white;
+$color_2: black;
+$font-family_1: "Saira Condensed", sans-serif;
+
+/*MAIN STYLE*/
+html {
+	height: 100%;
+	font-family: $font-family_1;
+	margin: 0;
+}
+body {
+	height: 100%;
+	font-family: $font-family_1;
+	margin: 0;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+a {
+	color: $color_1;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	a {
+		color: $color_2;
+	}
+}
+section {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 2rem auto;
+}
+article {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		font-weight: bold;
+		font-size: 50px;
+		text-align: center;
+		margin: 0;
+	}
+	p {
+		text-align: justify;
+	}
+}

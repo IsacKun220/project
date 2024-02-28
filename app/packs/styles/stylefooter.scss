@@ -1,0 +1,33 @@
+$color_1: rgb(255, 255, 255);
+
+/*FOOTER STYLE*/
+footer {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, rgba(69, 0, 153, 0.142) 0%, rgba(69, 0, 153) 100%);
+	color: $color_1;
+	.contact-info {
+		text-align: center;
+		width: 75%;
+		margin: auto;
+		h2 {
+			margin-bottom: 0;
+			margin-top: 1rem;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	.legal-links {
+		display: flex;
+		flex-flow: row wrap;
+		width: 75%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	p {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1rem;
+	}
+}
