@@ -19,6 +19,9 @@ $color_2: rgba(69, 0, 153);
 		text-align: center;
 		margin: 0 0 2rem 0;
 	}
+	a {
+		color: $color_2;
+	}
 }
 .login-form {
 	color: $color_1;
