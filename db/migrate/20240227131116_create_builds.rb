@@ -7,7 +7,7 @@ class CreateBuilds < ActiveRecord::Migration[7.0]
       t.integer :machine
       t.integer :material
       t.date :date
-      t.text :user 
+      t.integer :user 
       t.text :attachments 
       t.text :build_file
       t.text :comment
@@ -19,7 +19,12 @@ class CreateBuilds < ActiveRecord::Migration[7.0]
       t.decimal :average_eab, :precision => 15, :scale => 10
       t.decimal :tensile_raw_data, :precision => 15, :scale => 10
 
+      t.timestamps
+
     end
+    add_foreign_key :buidls, :users, column: :user
+    add_foreign_key :buidls, :materials, column: :material
+    add_foreign_key :buils, :machines, column: :machine
   end
   def self.down
     drop_table :materials
