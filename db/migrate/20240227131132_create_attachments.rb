@@ -11,5 +11,6 @@ class CreateAttachments < ActiveRecord::Migration[7.0]
       t.timestamps
     end
     add_foreign_key :attachments, :users, column: :author
+    add_foreign_key :attachments, :attachments, column: :personal_materials
   end
 end

@@ -22,9 +22,9 @@ class CreateBuilds < ActiveRecord::Migration[7.0]
       t.timestamps
 
     end
-    add_foreign_key :buidls, :users, column: :user
-    add_foreign_key :buidls, :materials, column: :material
-    add_foreign_key :buils, :machines, column: :machine
+    add_foreign_key :builds, :users, column: :user
+    add_foreign_key :builds, :materials, column: :material
+    add_foreign_key :builds, :machines, column: :machine
   end
   def self.down
     drop_table :materials
