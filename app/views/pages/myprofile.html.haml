@@ -1,0 +1,76 @@
+!!!
+%html{lang: "en-GB"}
+  %head
+    %title 3D Printing Research Lab
+    %link{rel: "stylesheet", href: "../packs/styles/stylefooter.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleforms.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleheader.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styles.css"}
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"}
+    %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
+    %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous"}
+    %link{href: "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap", rel: "stylesheet"}
+  %body
+    .wrapper
+      %header
+        %nav
+          .navigation
+            %ul
+              %li
+                %a{href: "home.html"} Home
+              %li
+                %a{href: "printers.html"} Printers
+              %li
+                %a{href: "materials.html"} Materials
+              %li
+                %a{href: "builds.html"} Builds
+          .auth-buttons
+            .dropdown
+              %button.active.profile-link
+                @Your Name
+                %i.fas.fa-user
+              .dropdown-content
+                %a{href: "myprofile.html"} View Profile
+                %a{href: "home.html"} Logout
+        .logo-title-container
+          %img{src: "../packs/images/University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
+          .title
+            %h1#h1-1 3D PRINTING
+            %h1#h1-2 RESEARCH LAB
+      %main
+        %section.profile-form
+          .user-image
+            %i.fas.fa-user-circle.fa-3x
+            %h2 User Profile
+          %form#profileForm
+            .form-group
+              %label{for: "profile-name"} Name:
+              %input{type: "text", id: "profile-name", name: "name", value: "Current Name"}
+            .form-group
+              %label{for: "profile-email"} Email:
+              %input{type: "email", id: "profile-email", name: "email", value: "user@example.com"}
+            .form-group
+              %label{for: "profile-password"} Password:
+              %input{type: "password", id: "profile-password", name: "password"}
+            .form-group
+              %label{for: "profile-confirm-password"} Confirm Password:
+              %input{type: "password", id: "profile-confirm-password", name: "confirm-password"}
+            .form-group
+              %label{for: "role"} Role:
+              %input{type: "text", id: "role", name: "role", value: "User's Role", disabled: true}
+            .form-group
+              %h3 Trainings Completed:
+              %ul
+                %li 3D Printing Basics
+                %li Advanced Material Handling
+            %button{type: "submit"} Save Changes
+            %button{type: "button", class: "delete-profile"} Delete Profile
+      %footer
+        .contact-info
+          %h2 CONTACT INFORMATION
+          %a{href: "mailto:contact@sheffield.ac.uk"} contact@sheffield.ac.uk
+        .legal-links
+          %p © 2024 The University of Sheffield
+          %p
+            %a{href: "#"} Privacy Policy
+            %a{href: "#"} Terms & Conditions

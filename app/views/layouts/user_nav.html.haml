@@ -1,0 +1,21 @@
+%nav
+          .navigation
+            %ul
+              %li
+                %a{href: "home.html"} Home
+              %li
+                %a{href: "printers.html"} Printers
+              %li
+                %a{href: "materials.html"} Materials
+              %li
+                %a{href: "searchbuilds.html"} Builds
+              %li
+                %a{href: "users.html", class: "active"} Users
+          .auth-buttons
+            .dropdown
+              %button.profile-link
+                @Your Name
+                %i.fas.fa-user
+              .dropdown-content
+                %a{href: "myprofile.html"} View Profile
+                %a{href: "home.html"} Logout

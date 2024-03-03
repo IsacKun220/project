@@ -5,6 +5,7 @@
     %link{rel: "stylesheet", href: "../packs/styles/stylefooter.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styleheader.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styles.css"}
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"}
     %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
     %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous"}
     %link{href: "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap", rel: "stylesheet"}
@@ -16,9 +17,19 @@
             %ul
               %li
                 %a{href: "home.html", class: "active"} Home
+              %li
+                %a{href: "printers.html"} Printers
+              %li
+                %a{href: "materials.html"} Materials
+              %li
+                %a{href: "builds.html"} Builds
           .auth-buttons
-            %button{onclick: "location.href='signup.html'"} Sign Up
-            %button{onclick: "location.href='login.html'"} Login
+            .dropdown
+              %button.profile-link @Your Name
+                %i.fas.fa-user
+              .dropdown-content
+                %a{href: "myprofile.html"} View Profile
+                %a{href: "home.html"} Logout
         .logo-title-container
           %img{src: "../packs/images/University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
           .title

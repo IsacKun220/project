@@ -3,6 +3,7 @@
   %head
     %title 3D Printing Research Lab
     %link{rel: "stylesheet", href: "../packs/styles/stylefooter.css"}
+    %link{rel: "stylesheet", href: "../packs/styles/styleforms.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styleheader.css"}
     %link{rel: "stylesheet", href: "../packs/styles/styles.css"}
     %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
@@ -15,24 +16,30 @@
           .navigation
             %ul
               %li
-                %a{href: "home.html", class: "active"} Home
+                %a{href: "home.html"} Home
           .auth-buttons
             %button{onclick: "location.href='signup.html'"} Sign Up
-            %button{onclick: "location.href='login.html'"} Login
+            %button{onclick: "location.href='login.html'", class: "active"} Login
         .logo-title-container
           %img{src: "../packs/images/University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
           .title
             %h1#h1-1 3D PRINTING
             %h1#h1-2 RESEARCH LAB
       %main
-        %section
-          %article
-            %h2 WELCOME TO OUR LAB!
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        %section
-          %article
-            %h2 MANDATORY TRAINING
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+        .login-form
+          %h2 Login
+          %form#loginForm
+            .form-group
+              %label{for: "login-email"} Email:
+              %input{type: "email", id: "login-email", name: "email", required: true}
+            .form-group
+              %label{for: "login-password"} Password:
+              %input{type: "password", id: "login-password", name: "password", required: true}
+            .form-group
+              %a{href: "recover_password.html", class: "recover-link"} Forgot password?
+            %button{type: "submit"} Login
+          %p Don't have an account? 
+            %a{href: "signup.html"} Sign up here
       %footer
         .contact-info
           %h2 CONTACT INFORMATION

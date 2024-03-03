@@ -1,0 +1,180 @@
+$color_1: white;
+$color_2: rgba(69, 0, 153);
+
+.signup-form {
+	color: $color_1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem 0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: linear-gradient(0deg, rgba(69, 0, 153, 0.142) 0%, rgba(69, 0, 153) 100%);
+	h2 {
+		display: flex;
+		font-weight: bold;
+		font-size: 50px;
+		text-align: center;
+		margin: 0 0 2rem 0;
+	}
+	a {
+		color: $color_2;
+	}
+}
+.login-form {
+	color: $color_1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem 0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: linear-gradient(0deg, rgba(69, 0, 153, 0.142) 0%, rgba(69, 0, 153) 100%);
+	h2 {
+		display: flex;
+		font-weight: bold;
+		font-size: 50px;
+		text-align: center;
+		margin: 0 0 2rem 0;
+	}
+	a {
+		color: $color_2;
+	}
+	p {
+		margin: 1rem auto;
+	}
+}
+.profile-form {
+	color: $color_1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem 0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: linear-gradient(0deg, rgba(69, 0, 153, 0.142) 0%, rgba(69, 0, 153) 100%);
+	h2 {
+		display: flex;
+		font-weight: bold;
+		font-size: 50px;
+		text-align: center;
+		margin: 0 0 2rem 0;
+		margin: 0;
+	}
+	h3 {
+		display: flex;
+		font-weight: bold;
+		text-align: start;
+		margin: 0;
+	}
+}
+.forgot-password-form {
+	color: $color_1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem 0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: linear-gradient(0deg, rgba(69, 0, 153, 0.142) 0%, rgba(69, 0, 153) 100%);
+	h2 {
+		display: flex;
+		font-weight: bold;
+		font-size: 50px;
+		text-align: center;
+		margin: 0 0 2rem 0;
+	}
+}
+.user-image {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	row-gap: 1rem;
+	a {
+		color: $color_1;
+	}
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	input[type="text"] {
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	input[type="email"] {
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	input[type="password"] {
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	select {
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+}
+.checkbox-group {
+	input[type="checkbox"] {
+		+ {
+			label {
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				border: none;
+			}
+		}
+		margin: auto 1rem;
+	}
+	flex-direction: row;
+	align-items: center;
+}
+#trainingsList {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	justify-content: center;
+	align-items: flex-start;
+	list-style-type: none;
+	padding: 0 0 1rem 0;
+}
+.training-btns {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	button {
+		margin: 1rem 0 0 0;
+		padding: 5px 20px;
+		text-transform: capitalize;
+		font-size: 15px;
+	}
+}
+.edit-btns {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	button {
+		margin: 1rem 0 0 0;
+		padding: 5px 20px;
+		text-transform: capitalize;
+		font-size: 15px;
+	}
+}

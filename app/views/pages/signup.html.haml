@@ -1,0 +1,65 @@
+!!!
+%html{lang: "en-GB"}
+  %head
+    %title 3D Printing Research Lab
+    %link{rel: "stylesheet", href: "styles.css"}
+    %link{rel: "stylesheet", href: "styleheader.css"}
+    %link{rel: "stylesheet", href: "stylefooter.css"}
+    %link{rel: "stylesheet", href: "styleforms.css"}
+    %link{rel: "preconnect", href: "https://fonts.googleapis.com"}
+    %link{rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous"}
+    %link{href: "https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap", rel: "stylesheet"}
+  %body
+    .wrapper
+      %header
+        %nav
+          .navigation
+            %ul
+              %li
+                %a{href: "home.html"} Home
+          .auth-buttons
+            %button{onclick: "location.href='signup.html'", class: "active"} Sign Up
+            %button{onclick: "location.href='login.html'"} Login
+        .logo-title-container
+          %img{src: "University_of_Sheffield_2022_S 1.png", alt: "University of Sheffield", class: "logo"}
+          .title
+            %h1#h1-1 3D PRINTING
+            %h1#h1-2 RESEARCH LAB
+      %main
+        %section.signup-form
+          %h2 Sign Up
+          %form#signupForm
+            .form-group
+              %label{for: "name"} Name:
+              %input{type: "text", id: "name", name: "name", required: true}
+            .form-group
+              %label{for: "email"} Email:
+              %input{type: "email", id: "email", name: "email", required: true}
+            .form-group
+              %label{for: "password"} Password:
+              %input{type: "password", id: "password", name: "password", required: true}
+            .form-group
+              %label{for: "confirm-password"} Confirm Password:
+              %input{type: "password", id: "confirm-password", name: "confirm-password", required: true}
+            .form-group
+              %label{for: "role"} Role:
+              %select{id: "role", name: "role"}
+                %option{value: "admin"} Admin
+                %option{value: "undergraduate"} Undergraduate Students
+                %option{value: "staff"} Staff Member/PhD's/Researchers
+                %option{value: "guest"} Guest
+            .form-group.checkbox-group
+              %input{type: "checkbox", id: "agree", name: "agree", required: true}
+              %label{for: "agree"}
+                I agree to
+                %a{href: "#"} the terms and conditions
+            %button{type: "submit"} Sign Up
+      %footer
+        .contact-info
+          %h2 CONTACT INFORMATION
+          %a{href: "mailto:contact@sheffield.ac.uk"} contact@sheffield.ac.uk
+        .legal-links
+          %p © 2024 The University of Sheffield
+          %p
+            %a{href: "#"} Privacy Policy
+            %a{href: "#"} Terms & Conditions
