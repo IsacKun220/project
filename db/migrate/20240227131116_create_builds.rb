@@ -2,7 +2,26 @@ class CreateBuilds < ActiveRecord::Migration[7.0]
   def change
     create_table :builds do |t|
 
-      t.timestamps
+      t.text :project_name
+      t.text :build_name
+      t.integer :machine
+      t.integer :material
+      t.date :date
+      t.text :user 
+      t.text :attachments 
+      t.text :build_file
+      t.text :comment
+      t.text :parameter
+      t.date :last_update
+      t.text :completion_status
+      t.decimal :average_uts, :precision => 15, :scale => 10
+      t.decimal :average_modules, :precision => 15, :scale => 10
+      t.decimal :average_eab, :precision => 15, :scale => 10
+      t.decimal :tensile_raw_data, :precision => 15, :scale => 10
+
     end
+  end
+  def self.down
+    drop_table :materials
   end
 end
